@@ -7,4 +7,191 @@ Version: 1.0
 */
 @import url('bootstrap/css/bootstrap.min.css'); 
 
+*{
+	font-family: 'Ubuntu', sans-serif;
+}
+/*AJUSTE BOOTSTRAP*/
+@media (min-width: 1200px){
+	.container {
+	  width: 1180px;
+	}
+}
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+/*END AJUSTE BOOTSTRAP*/
 
+
+/*HEADER*/
+#bar-top{
+	padding-top:12px;
+}
+.tel-header img{
+	margin-right:7px;
+}
+.face{
+margin-right: 5px;
+  margin-left: 9px;
+}
+.face
+, .linkedin{
+	display: inline-block;
+}
+
+.face a
+, .linkedin a{
+	width: 16px;
+  height: 19px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+ }
+
+.face a img
+, .linkedin a img{
+	position: absolute;
+  left: 0px;
+}
+
+.face a:hover > img
+, .linkedin a:hover > img{
+	position: absolute;
+  left: -18px;
+}
+
+#nav{
+	padding-bottom:22px;
+	border-bottom:thin solid #e5eff4;
+}
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0;
+  border: none;
+	padding-top: 22px;
+	background-color: transparent;
+}
+.navbar-default{
+	width:100%
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	padding:0;
+	  float: right;
+}
+.navbar-default .navbar-nav>li>a{
+  padding: 0;
+  min-height: 59px;
+  padding-top: 37px;
+  padding-left: 26px;
+  padding-right: 26px;
+  font-size:20px;
+  color:#575756;
+  font-style:italic;
+  font-weight:300;
+
+}
+.navbar-default .navbar-nav>li:first-child:hover>a{ /*home*/
+	 background:url(images/ico-home-hover.png) no-repeat 13px top;
+}
+.navbar-default .navbar-nav>li:nth-child(2):hover>a{/*a gestiona*/
+	background:url(images/ico-gestiona-hover.png) no-repeat center top;
+}
+.navbar-default .navbar-nav>li:nth-child(3):hover>a{/*atuacao*/
+	background:url(images/ico-atuacao-hover.png) no-repeat center top;
+}
+.navbar-default .navbar-nav>li:nth-child(4):hover>a{/*conhecimento*/
+	background:url(images/ico-conhecimento-hover.png) no-repeat center top;
+}
+.navbar-default .navbar-nav>li:last-child:hover>a{/*contato*/ 
+	background:url(images/ico-contato-hover.png) no-repeat 50px top;
+}
+
+/*hover*/
+.navbar-default .navbar-nav>li:hover > a{
+	color:#0c3048;
+}
+.navbar-default .navbar-nav>li:first-child>a{ /*home*/
+	padding-left:0;
+	 background:url(images/ico-home.png) no-repeat 13px top;
+}
+.navbar-default .navbar-nav>li:nth-child(2)>a{/*a gestiona*/
+	background:url(images/ico-gestiona.png) no-repeat center top;
+}
+.navbar-default .navbar-nav>li:nth-child(3)>a{/*atuacao*/
+	background:url(images/ico-atuacao.png) no-repeat center top;
+}
+.navbar-default .navbar-nav>li:nth-child(4)>a{/*conhecimento*/
+	background:url(images/ico-conhecimento.png) no-repeat center top;
+}
+.navbar-default .navbar-nav>li:last-child>a{/*contato*/ 
+	padding-right:0;
+	background:url(images/ico-contato.png) no-repeat 50px top;
+}
+
+/*END HEADER*/
+
+/*FOOTER*/
+#footer{
+	background:url(images/Pattern.jpg) repeat;
+	padding-top:43px;
+	padding-bottom:40px;
+	font-family: 'PT Sans', sans-serif;
+	color:white;
+	  margin-bottom: -12px;
+}
+#footer p{
+	margin-bottom:12px;
+}
+#footer .tel-footer img{
+	vertical-align:text-bottom;
+}
+
+#logo-footer p{
+	font-size:13px;
+	  margin-top: -7px;
+}
+#footer .end-footer img{
+	  margin-top: 3px;
+  margin-right: 11px;
+}
+
+/*END FOOTER*/
+
+
+@media (max-width: 767px){
+	/*FOOTER*/
+	#logo-footer{
+		margin-bottom:20px;
+	}
+	.tel-footer{
+		margin-bottom:20px;
+	}
+	/*END FOOTER*/
+	
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+		width: 70%;
+	  text-align: center;
+	  overflow:hidden;
+	}
+	.navbar-default .navbar-nav>li>a{
+		padding:0;
+	    min-height: 35px;
+	    background-position:13px top !important;
+		  padding-top: 8px;
+	}
+	.nav>li {
+	  margin-bottom: 15px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.navbar-default .navbar-nav>li>a {
+	  padding-left: 19px;
+	  padding-right: 19px;
+	  font-size: 19px;
+	}
+	#logo-header img{
+		max-width:140%;
+	}
+}
