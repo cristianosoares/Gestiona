@@ -27,4 +27,4 @@
 <?php wp_footer(); ?>
 </body>
 </html>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:400,300italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:400,300italic,500italic' rel='stylesheet' type='text/css'>
