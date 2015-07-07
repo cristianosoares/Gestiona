@@ -577,6 +577,9 @@ conhecimento-singel a{
 #banner-interno.a-gestiona{
 	background:url(images/banner-a-gestiona.jpg) no-repeat center center;
 }
+#banner-interno.contato{
+	background:url(images/banner-contato.png) no-repeat center center;
+}
 
 #banner-interno h1{
 	position:absolute;
@@ -635,6 +638,75 @@ conhecimento-singel a{
 	
 /*END PAGE*/
 
+/*CONTATO*/
+
+label{
+	background:#a3cbd0;
+	font-size:15px;
+	color:#f5fafd;
+	font-weight:300;
+	font-style:italic;
+	text-transform:uppercase;
+	  padding: 7px 10px;
+  	border-radius: 20px 0px 0px 20px;
+	margin:0;
+	min-width:80px;
+}
+input{
+	border:thin solid #edf2f5;
+	  padding: 7px 10px;
+	border-radius:20px;
+	background:#f5fafd;
+	color:#575756;
+	font-size:15px;
+	font-weight:300;
+	font-style:italic;
+	border-radius: 0px 20px 20px 0px;
+	max-width:470px;
+	width:100%;
+	margin-bottom:12px;
+}
+input:focus
+,textarea:focus{
+	outline:none;
+}
+textarea{
+	border:thin solid #eef3f5;
+	background:#f5fafd;
+	min-height:160px;
+	max-width:559px;
+	width:100%;
+	color:#575756;
+	font-size:15px;
+	font-weight:300;
+	font-style:italic;
+	border-radius:15px;
+	margin-bottom:10px;
+	 padding: 7px 10px;
+}
+input[type="submit"]{
+	font-size:15px;
+	color:#0c3048;
+	text-transform:lowercase;
+	font-weight:500;
+	font-style:italic;
+	width:140px;
+	background:white;
+	border-radius: 20px;
+	border-color:#05476d;
+}
+form{
+	margin-bottom:20px;
+}
+.end p{
+	font-size:22px !important;
+	color:#05476d !important;
+}
+.end address{
+	font-size:15px !important;
+	color:#05476d !important;
+}
+/*END CONTATO*/
 @media (max-width: 767px){
 	/*FOOTER*/
 	#logo-footer{
