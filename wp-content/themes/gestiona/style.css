@@ -6,6 +6,7 @@ Description:
 Version: 1.0
 */
 @import url('bootstrap/css/bootstrap.min.css'); 
+/*GERAL*/
 body{
 	background-color:#f5fafd
 }
@@ -65,6 +66,8 @@ font-size: 17px;
 	background-color:#05476d;
 	color:#e5eff4;
 }
+/*END GERAL*/
+
 /*AJUSTE BOOTSTRAP*/
 @media (min-width: 1200px){
 	.container {
@@ -77,6 +80,34 @@ font-size: 17px;
 }
 /*END AJUSTE BOOTSTRAP*/
 
+/* AJUSTE PLUGIN column-shortcodes*/
+.full_width,
+.one_half,
+.one_third,
+.two_third,
+.one_fourth,
+.three_fourth,
+.one_fifth,
+.two_fifth,
+.three_fifth,
+.four_fifth,
+.one_sixth,
+.five_sixth {
+	position: relative;
+	min-height: 1px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.one_sixth  {
+	width: 8.33333333% !important;
+}
+.three_fifth {
+  width: 58% !important;
+}
+.last_column{
+	float:right !important;
+}
+/*END AJUSTE PLUGIN column-shortcodes*/
 
 /*HEADER*/
 #header{
@@ -535,6 +566,75 @@ conhecimento-singel a{
 }
 /*END HOME*/
 
+/*PAGE*/
+#banner-interno{
+	height:237px;
+	z-index: -1;
+	top: -137px;
+	margin-bottom: -137px;
+	position:relative;
+}
+#banner-interno.a-gestiona{
+	background:url(images/banner-a-gestiona.jpg) no-repeat center center;
+}
+
+#banner-interno h1{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	font-size:40px;
+	color:#05476d;
+	font-weight:300;
+	font-style:italic;
+	margin-top:0;
+	margin-bottom:35px;
+}
+#page{
+  padding-bottom: 60px;
+  background:white;
+  padding-top:55px;
+}
+#page h1
+,#page h2
+,#page h3
+,#page h4
+,#page h5
+,#page h6{
+	color:#05476d;
+	font-weight:300;
+	font-style:italic;
+	margin-bottom:27px;
+	margin-top:0;
+}
+
+#page h1{ font-size:40px;}
+#page h2{font-size:30px;}
+#page h3{font-size:20px;}
+#page h4{font-size:18px;}
+#page h5{font-size:16px;}
+
+#page p + p{margin-top:11px;}
+#page p{
+	margin-bottom:0;
+	color:#575756;
+	font-size:15px;
+}
+#page ul{
+	margin-top:12px;
+  padding-left: 16px;
+}
+#page ul li
+, #page ul ol{
+	margin-top:11px;
+}
+#page hr{
+	border-color:#e5eff4;
+	margin:50px 0;
+}
+	
+/*END PAGE*/
+
 @media (max-width: 767px){
 	/*FOOTER*/
 	#logo-footer{
@@ -588,6 +688,13 @@ conhecimento-singel a{
 	  top: 65px;
 	}
 	/*END HOME*/
+	
+	.three_fifth {
+	  width: 50% !important;
+	}
+	.one_third {
+	  width: 50% !important;
+	}
 
 }
 @media (max-width: 1200px){
