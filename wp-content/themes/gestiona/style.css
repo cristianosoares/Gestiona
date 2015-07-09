@@ -580,6 +580,9 @@ conhecimento-singel a{
 #banner-interno.contato{
 	background:url(images/banner-contato.png) no-repeat center center;
 }
+#banner-interno.conhecimento{
+	background:url(images/banner-conhecimento.jpg) no-repeat center center;
+}
 
 #banner-interno h1{
 	position:absolute;
@@ -707,6 +710,154 @@ form{
 	color:#05476d !important;
 }
 /*END CONTATO*/
+
+/*SIDEBAR*/
+aside #widget-list .widget-title {
+	color:#575756;
+	font-size:15px;
+	margin-bottom:6px;
+	margin-top:21px;
+	font-family: 'PT Sans', sans-serif;
+}
+aside h4{
+	font-size:18px;
+	color:#0c3048;
+	font-style:italic;
+	font-weight:300;
+	border-bottom:thin solid #0c3048;
+	padding-bottom:10px;
+	margin-bottom:0;
+}
+#searchform div{
+	display:block;
+	width:100%;
+}
+#searchform{
+	margin-top:20px;
+	margin-bottom:0;
+}
+#searchform input{
+  width: 88%;
+  color: #575756;
+  background-color: transparent;
+  padding: 6px 15px;
+  border-color: #575756;
+  border-radius: 15px 0 0 15px;
+  border-right: none;
+  display: inline-block;
+  margin-right: -4px;
+}
+#searchform #searchsubmit{
+  width: 9%;
+  background: url(images/ico-luneta.png) no-repeat left center;
+  border: thin solid;
+  border-radius: 0px 15px 15px 0px;
+  border-left: none;
+  padding: 6px 3px;
+}
+/*END SIDEBAR*/
+
+/*CONHECIMENTO*/
+#page.blog-front hr{
+	margin-bottom:23px !important;
+	margin-top:17px !important;
+}
+#categories-parent
+, #categories-child{
+	list-style:none;
+	display:block;
+	float:left;
+	padding:0;
+	width:100%;
+}
+#categories-parent li{
+	  width: 128px;
+	margin-left:10px;
+}
+#categories-parent li a{
+text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  color: #575756;
+  font-style: italic;
+  padding: 4px;
+  border-radius: 18px;
+  border: thin solid;
+  width: 100%;
+  display: block;
+  text-align: center;
+  cursor:pointer;
+}
+#categories-parent li a:hover
+,#categories-parent li .active
+{	text-decoration:none;
+	color:#f5fafd;
+	background:#575756;
+}
+#categories-parent li:first-child{
+	margin-left:0;
+}
+#categories-child{
+	clear:both;
+}
+#categories-parent li
+, #categories-child li{
+	float:left;
+}
+#categories-child li a{
+	color:#575756;
+	font-size:15px;
+	text-transform:uppercase;
+	font-weight:300;
+	cursor:pointer;
+}
+#categories-child li a:hover
+,#categories-child li .active{
+	font-weight:700;
+}
+#categories-child li {
+	margin-left:13px;
+}
+#categories-childt li:first-child{
+	margin-right:0;
+}
+.post-single{
+	margin-bottom:23px;
+}
+.post-single img{
+	border:thin solid #f6f6f6;
+	border-bottom:none;
+}
+.post-single-content{
+	padding-left:15px;
+	padding-right:15px;
+	padding-bottom:15px;
+	padding-top:13px;
+	border:thin solid #f6f6f6;
+	border-top:none;
+}
+
+.post-single .post-list-cat{
+	font-size:18px;
+	color:#1488c9;
+	font-weight:300;
+	margin-bottom:13px;
+	display:block;
+}
+.post-single h2{
+	font-size:22px !important;
+	color:#575756 !important;
+	font-weight:300;
+	font-style:italic;
+	margin-bottom:11px !important;
+}
+.post-single p{
+	margin-bottom:20px !important;
+	color:#575756;
+	font-size:15px;
+}
+/*END CONHECIMENTO*/
+
 @media (max-width: 767px){
 	/*FOOTER*/
 	#logo-footer{
