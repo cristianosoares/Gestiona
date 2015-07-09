@@ -1,5 +1,9 @@
-<?php //Tamplate name: Conhecimento ?>
-<?php get_header(); ?>
+<?php
+/*
+ * The template for displaying Search Results pages
+ */
+
+get_header(); ?>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -8,10 +12,23 @@
   js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=665151493561930";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<?php global $post;?>
-<div id="banner-interno" class="container-fluid <?php echo $post->post_name;?>">
+
+<?php
+global $query_string;
+
+$query_args = explode("&", $query_string);
+$search_query = array();
+
+foreach($query_args as $key => $string) {
+	$query_split = explode("=", $string);
+	$search_query[$query_split[0]] = urldecode($query_split[1]);
+} // foreach
+
+$search = new WP_Query($search_query);
+?>
+<div id="banner-interno" class="container-fluid">
 	<div class="container text-center">
-    	<h1><?php echo get_the_title(); ?></h1>
+    	<h1><?php echo $total_results; ?></h1>
     </div>
 </div><!--banner-interno-->
 <section id="page" class="container-fluid blog-front">
@@ -72,7 +89,7 @@
                     'order' => 'DESC'
                 );				
                 $posts = get_posts( $args );
-                foreach ( $posts as $post ) { ?>
+                foreach ( $search as $post ) { ?>
                         <div class="col-sm-6 post-single">
                         <?php
                             //verifica e coloca thumb
@@ -149,4 +166,3 @@
 		});
 	}
 </script>
-
